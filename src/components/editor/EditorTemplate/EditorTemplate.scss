@@ -10,6 +10,16 @@
 		// relative로 설정
 		position: relative;
 		background: $oc-gray-1;
+
+	@include media("<medium"){
+		.editor{
+			flex: 1!important;
+		}
+		.preview .seperator {
+			display: none;
+		}
+	}
+
 		.pane{
 			display: flex;
 		// 내부의 내용이 커도

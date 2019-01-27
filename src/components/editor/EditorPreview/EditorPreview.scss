@@ -1,0 +1,21 @@
+@import 'utils';
+
+.editor-preview {
+	// 자신에게 주어진 영역 다 채우기 
+
+	flex: 1;
+	padding: 2rem;
+	overflow-y: auto;
+	font-size: 1.125rem;
+	// flex-direction: column;
+
+	.title {
+
+		font-weight: 300;
+		font-size: 2.5rem;
+		padding-bottom: 2rem;
+		border-bottom: 1px solid $oc-gray-4;
+	}
+
+
+}
