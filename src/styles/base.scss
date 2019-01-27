@@ -1,0 +1,21 @@
+
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono");
+
+body {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Noto Sans KR", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+// box-sizing 일괄 설정
+* {
+	box-sizing: inherit;
+}
+
+* {
+	text-decoration: inherit;
+	color: inherit;
+}
