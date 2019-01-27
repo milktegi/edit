@@ -4,7 +4,7 @@ import React from 'react';
 // 라담은 라우터담당
 
 import { Switch, Route } from 'react-router-dom';
-import { ListPage, PostPage, EditorPage, NotFoundPage } from '../pages';
+import { ListPage, PostPage, EditorPage, NotFoundPage } from 'pages';
 
 const App = () => {
   return (

@@ -1,11 +1,13 @@
 import React from 'react';
+import PageTemplate from 'components/common/PageTemplate';
 
 const ListPage = () => {
-	return (  
-		<div>
-			ListPage 
-		</div>
-	);
-}
- 
+  return (
+	<PageTemplate>
+		ListPage
+		</PageTemplate>
+		);
+		
+};
+
 export default ListPage;

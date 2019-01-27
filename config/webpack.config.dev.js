@@ -196,8 +196,9 @@ module.exports = {
                 loader: require.resolve('css-loader'),
                 options: {
                   importLoaders: 1,
-                  localIdentName: '[name]__[local]__[hash:base64:5]',
-                  modules: 1
+                  modules: true,
+                  localIdentName: '[name]__[local]--[hash:base64:5]',
+                
                 },
               },
               {
@@ -220,6 +221,12 @@ module.exports = {
                   ],
                 },
               },
+              {
+                loader: require.resolve('sass-loader'),
+                options: {
+                  includePaths: [paths.globalStyles]
+                }
+              }
             ],
           },
           // "file" loader makes sure those assets get served by WebpackDevServer.
