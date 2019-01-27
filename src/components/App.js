@@ -1,11 +1,24 @@
 import React from 'react';
 
+// 앱은 라담
+// 라담은 라우터담당
+
+import { Switch, Route } from 'react-router-dom';
+import { ListPage, PostPage, EditorPage, NotFoundPage } from '../pages';
+
 const App = () => {
-	return(
-		<div>
-			editorApp
-		</div>
-	)
-}
+  return (
+    <div>
+      <Switch>
+        <Route exact path="/" component={ListPage} />
+        <Route exact path="/page/:page" component={ListPage} />
+        <Route exact path="/tag/:/tag/:page?" component={ListPage} />
+        <Route exact path="/post/:id" component={PostPage} />
+        <Route exact path="/editor" component={EditorPage} />
+        <Route component={NotFoundPage} />
+      </Switch>
+    </div>
+  );
+};
 
 export default App;
