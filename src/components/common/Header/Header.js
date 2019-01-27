@@ -2,7 +2,10 @@ import React from 'react';
 import styles from './Header.scss'
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
+import Button from 'components/common/Button';
+
 const cx = classNames.bind(styles);
+
 const Header = () => {
 	return (  
 		<div className={cx('header')}>
@@ -11,8 +14,7 @@ const Header = () => {
 					<Link to="/">reditt</Link>	
 				</div>
 				<div className={cx('right')}>
-					왼쪽인지 오른쪽인지 모르겠을 땐
-					오른쪽 
+				<Button theme="outline" to="/editor">새 포스트</Button>
 				</div>
 			</div>
 		</div>
