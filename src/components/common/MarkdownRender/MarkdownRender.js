@@ -73,7 +73,8 @@ class MarkdownRender extends Component {
     };
 
     return (
-      <div className={cx('markdown-loader')} dangerousSetInnerHTML={markup} />
+      <div className={cx('markdown-loader')} 
+      dangerouslySetInnerHTML={markup} />
     );
   }
 }

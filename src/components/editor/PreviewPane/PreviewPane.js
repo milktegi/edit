@@ -8,10 +8,8 @@ const cx = classNames.bind(styles);
 const PreviewPane = ({markdown, title}) => {
   return (
     <div className={cx('editor-preview')}>
-      <h1 className={cx('title')}>제목</h1>
-			<div>
-				{title}
-			</div>
+      <h1 className={cx('title')}>{title}</h1>
+			
       <div>
         <MarkdownRender markdown={markdown}/>
       </div>
