@@ -6,3 +6,6 @@ export const writePost = ({ title, body, tags }) =>
     body,
     tags
   });
+
+export const getPost = (id) =>
+  axios.post(`/api/posts${id}`);

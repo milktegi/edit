@@ -1,5 +1,5 @@
 import { createAction, handleActions } from 'redux-actions';
-import * as api from '/lib/api';
+import * as api from 'lib/api';
 import { Map } from 'immutable';
 import { pender } from 'redux-pender';
 
@@ -30,7 +30,7 @@ export default handleActions({
  ...pender({
 	 type: WRITE_POST,
 	 onSuccess: (state, action) => {
-		 const { id } = action.payload.data,
+		 const { _id } = action.payload.data;
 		 return state.set('postId', _id);
 	 }
  })
