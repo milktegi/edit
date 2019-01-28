@@ -1,0 +1,21 @@
+@import 'utils';
+
+.pagination {
+
+	padding-top: 2rem;
+	padding: 20px;
+	margin-top: 55px;
+	border: 1px solid white;
+	border-radius: 3px;
+	padding: 12px;
+	display: flex;
+	align-items: center;
+
+	.number {
+		font-size: 0.85rem;
+		text-align: center;
+		color: $oc-gray-6;
+		flex: 1;
+	}
+
+}

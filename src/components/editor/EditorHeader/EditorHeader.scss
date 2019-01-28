@@ -1,0 +1,18 @@
+@import 'utils';
+
+.editor-header {
+
+	background: rgb(170, 182, 221);
+
+	height: 4rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	display: flex;
+	align-items: center;
+
+	.submit {
+		margin-left: auto;
+	}
+
+
+}
